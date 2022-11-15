@@ -21,3 +21,11 @@
 import { createContext } from 'react';
 
 export const PupContext = createContext();
+
+export const PupProvider = (props) => {
+  return (
+    <PupContext.Provider>
+      {props.children}
+    </PupContext.Provider>
+  );
+};
